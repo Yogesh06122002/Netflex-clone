@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.row-movie{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+
+    
+}
+.row-movies{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x:scroll ;
+    padding: 20px;
+
+}
+.row-movie:hover{
+    transform: scale(1.08);
+}
+.row-movies::-webkit-scrollbar{
+    display: none;
+}
+.postlarge{
+    max-height: 250px;
+
+}
+.postlarge:hover{
+    transform: scale(1.09);
+}
+.row{
+    color:antiquewhite;
+    margin-left: 15px;
+}
+.banner{
+    background: url(./images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: antiquewhite;
+    object-fit: contain;
+    height: 600px;
+}
+.banner_contents{
+    margin-left: 30px;
+    padding-top: 120px;
+    height: 190px;
+}
+.banner-title{
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+
+}
+.discription{
+    width: 50rem;
+    line-height: 1.4;
+    padding-top: 2rem;
+    font-size: 1rem;
+    height: 180px;
+    max-width: 480px;
+    
+}
+.banner-button{
+    color: antiquewhite;
+    cursor: pointer;
+    border: none;
+    font-weight: 800;
+    border-radius: 7px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(51,51,51);
+    
+}
+.banner-button:hover{
+    color: black;
+    background-color: antiquewhite;
+}
+.banner-fade{
+    margin-top: 295px;
+    height: 7.4rem;
+    background: linear-gradient(180deg,transparent,rgb(37,37,37,0.61),#111);
+
+}
+.nav-logoo{
+    width: 80px;
+    object-fit: contain;
+}
+.nav-smile{
+    width: 42px;
+    object-fit: contain;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    z-index: 1;
+}
